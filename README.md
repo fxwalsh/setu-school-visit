@@ -8,7 +8,7 @@ The supplied presentation and its PDF export are in `topic-01-setu-programmes/ta
 
 ## Build and run locally
 
-From this folder, build the local HTML version with Deno:
+From this folder, build the local HTML preview with Deno:
 
 ```powershell
 deno run -A jsr:@tutors/tutors-lite
@@ -21,6 +21,14 @@ deno run --allow-net --allow-read=html jsr:@std/http/file-server html --port 800
 ```
 
 Open <http://localhost:8000/>. Stop the server with Ctrl+C. The first run may download the Deno packages from JSR.
+
+The static Tutors Lite build currently lists the notebook card but does not generate its notebook page. To generate the full Tutors course data, including the native notebook resource, run:
+
+```powershell
+deno run -A jsr:@tutors/tutors
+```
+
+This writes the `json` folder for the Tutors Reader; the native notebook is rendered by the Reader when the course is published and opened there.
 
 Card artwork uses Iconify SVG icons configured in `properties.yaml` and the topic, talk, and lab front matter. The icons are loaded from Iconify, so an internet connection is needed to display them.
 
