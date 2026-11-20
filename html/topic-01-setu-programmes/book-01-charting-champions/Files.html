@@ -42,7 +42,7 @@
         <span class="iconify" data-icon="mdi:chart-box" data-width="50" style="color:#D00034;"></span>
     </div>
     <div class="ml-4 flex-nowrap">
-      <h2 class="mr-4 font-bold"> Charting Champions</h2>
+      <h2 class="mr-4 font-bold"> Charting Champions</h2>
       <h2>
            SETU Programmes
       </h2>
@@ -167,12 +167,22 @@
    <span class="mx-2 iconify" data-icon="fluent:beaker-24-filled" data-height="30" style="color:#d00034"></span>
   </div> 
 
-      <span class="mb-1 ml-2">  Charting Champions </span>
+      <span class="mb-1 ml-2">  Charting Champions </span>
     </a> 
   </div>
 
                      <div class="flex py-1 ml-4">
     <a href="../..//notebook//topic-01-setu-programmes/notebook-01-charting-champions" class="flex">
+          <div>
+   <span class="mx-2 iconify" data-icon="fluent:notebook-24-regular" data-height="30" style="color:#557927"></span>
+  </div> 
+
+      <span class="mb-1 ml-2">  Charting Champions: Jupyter Notebook </span>
+    </a> 
+  </div>
+
+                     <div class="flex py-1 ml-4">
+    <a href="../..//notebook//topic-01-setu-programmes/notebook-01-charting-champions-2" class="flex">
           <div>
    <span class="mx-2 iconify" data-icon="fluent:notebook-24-regular" data-height="30" style="color:#557927"></span>
   </div> 
@@ -239,7 +249,7 @@
                 </a>
                 <a class="p-4 py-3 text-base " 
                    href="./Setup.html">
-                   Get ready
+                   Get ready in Thonny
                 </a>
                 <a class="p-4 py-3 text-base " 
                    href="./Chart.html">
@@ -273,14 +283,16 @@
         <article class="prose flex-1 max-w-[65ch] 2xl:max-w-[120ch] prose-pre:overflow-x-auto">
           <h1 id="read-data-from-a-file" tabindex="-1"><a class="header-anchor" href="#read-data-from-a-file">Read data from a file</a></h1>
 <p>Typing a list for every country would take a long time. A CSV file stores values in rows with commas between columns.</p>
-<p>Open <code>medals.csv</code> in your editor. It contains the same five historical sample rows and no heading row:</p>
+<p><img src="img/csv_sample.png" alt="Five numbered CSV rows, each with a team name and medal count separated by a comma."></p>
+<p>Look at the first row of this source example. Which character separates the name from the count? The numbers down the left are editor line numbers. Your file uses a different historical sample.</p>
+<p>In Thonny, choose <strong>File → Open</strong> and select <code>medals.csv</code> from your extracted folder. Choose <strong>All files</strong> in the file picker if needed. It contains the same five historical sample rows and no heading row:</p>
 <pre><code class="language-text">United States,2399
 Russia,1413
 Great Britain,1304
 France,780
 Germany,671
 </code></pre>
-<p>Save a copy of your list-based program as <code>lists_chart.py</code>. In <code>main.py</code>, replace the lists and <code>chart.add()</code> calls with:</p>
+<p>Click the <code>main.py</code> tab. Choose <strong>File → Save as</strong> and save it as <code>lists_chart.py</code> in the same folder. Reopen <code>main.py</code> using <strong>File → Open</strong> so your list version stays available. In <code>main.py</code>, replace the lists and <code>chart.add()</code> calls with:</p>
 <pre><code class="language-python">with open('medals.csv', encoding='utf-8') as data_file:
     for line in data_file:
         print(line.strip())
@@ -288,7 +300,7 @@ Germany,671
 <p>Leave the import, chart creation and output line in place. Run it. An empty chart is expected at this stage: you have printed the file contents but have not added them to the chart.</p>
 <p><code>with open(...)</code> opens the file and closes it when the block finishes. The <code>for</code> loop visits each row. Four spaces indent each nested level. <code>strip()</code> removes surrounding whitespace, including the newline at the end of a row.</p>
 <h2 id="checkpoint" tabindex="-1"><a class="header-anchor" href="#checkpoint">Checkpoint</a></h2>
-<p>The terminal displays five rows. Explain which line repeats and why. If Python cannot find the file, run the program from the extracted starter folder.</p>
+<p>Thonny’s Shell displays five rows. Explain which line repeats and why. If Python cannot find the file, run the program from the extracted starter folder.</p>
 
         </article>
       </div>
@@ -311,7 +323,7 @@ Germany,671
 
 
   <div class="hidden xl:block card w-80 min-w-80 max-w-80 p-4 text-center shadow-2xl rounded-box bg-[#d6e9e9] m-2 h-auto overflow-y-auto self-start sticky top-20">
-    <h3 class="font-bold mb-2"> Charting Champions</h3>
+    <h3 class="font-bold mb-2"> Charting Champions</h3>
     
       <div class="flex justify-center items-center">
         <span class="iconify" data-icon="mdi:chart-box" data-width="164" style="color:#D00034;"></span>
@@ -334,12 +346,22 @@ Germany,671
    <span class="mx-2 iconify" data-icon="fluent:beaker-24-filled" data-height="30" style="color:#d00034"></span>
   </div> 
 
-    <span class="mb-1 ml-2">  Charting Champions </span>
+    <span class="mb-1 ml-2">  Charting Champions </span>
   </a>
 </div>
 
           <div class="flex py-1 ml-0">
     <a href="../notebook-01-charting-champions/index.html" class="flex">
+        <div>
+   <span class="mx-2 iconify" data-icon="fluent:notebook-24-regular" data-height="30" style="color:#557927"></span>
+  </div> 
+
+    <span class="mb-1 ml-2">  Charting Champions: Jupyter Notebook </span>
+  </a>
+</div>
+
+          <div class="flex py-1 ml-0">
+    <a href="../notebook-01-charting-champions-2/index.html" class="flex">
         <div>
    <span class="mx-2 iconify" data-icon="fluent:notebook-24-regular" data-height="30" style="color:#557927"></span>
   </div> 

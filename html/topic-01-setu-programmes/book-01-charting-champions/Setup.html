@@ -42,7 +42,7 @@
         <span class="iconify" data-icon="mdi:chart-box" data-width="50" style="color:#D00034;"></span>
     </div>
     <div class="ml-4 flex-nowrap">
-      <h2 class="mr-4 font-bold"> Charting Champions</h2>
+      <h2 class="mr-4 font-bold"> Charting Champions</h2>
       <h2>
            SETU Programmes
       </h2>
@@ -167,12 +167,22 @@
    <span class="mx-2 iconify" data-icon="fluent:beaker-24-filled" data-height="30" style="color:#d00034"></span>
   </div> 
 
-      <span class="mb-1 ml-2">  Charting Champions </span>
+      <span class="mb-1 ml-2">  Charting Champions </span>
     </a> 
   </div>
 
                      <div class="flex py-1 ml-4">
     <a href="../..//notebook//topic-01-setu-programmes/notebook-01-charting-champions" class="flex">
+          <div>
+   <span class="mx-2 iconify" data-icon="fluent:notebook-24-regular" data-height="30" style="color:#557927"></span>
+  </div> 
+
+      <span class="mb-1 ml-2">  Charting Champions: Jupyter Notebook </span>
+    </a> 
+  </div>
+
+                     <div class="flex py-1 ml-4">
+    <a href="../..//notebook//topic-01-setu-programmes/notebook-01-charting-champions-2" class="flex">
           <div>
    <span class="mx-2 iconify" data-icon="fluent:notebook-24-regular" data-height="30" style="color:#557927"></span>
   </div> 
@@ -239,7 +249,7 @@
                 </a>
                 <a class="p-4 py-3 text-base font-bold bordered" 
                    href="./Setup.html">
-                   Get ready
+                   Get ready in Thonny
                 </a>
                 <a class="p-4 py-3 text-base " 
                    href="./Chart.html">
@@ -271,28 +281,17 @@
         
         <!-- Lab Content -->
         <article class="prose flex-1 max-w-[65ch] 2xl:max-w-[120ch] prose-pre:overflow-x-auto">
-          <h1 id="get-ready" tabindex="-1"><a class="header-anchor" href="#get-ready">Get ready</a></h1>
+          <h1 id="get-ready-in-thonny" tabindex="-1"><a class="header-anchor" href="#get-ready-in-thonny">Get ready in Thonny</a></h1>
 <ol>
-<li><a href="archives/charting-champions-starter.zip" target="_blank">Download the starter files</a>.</li>
-<li>Extract the ZIP into a folder you can find again.</li>
-<li>Open that folder in your Python editor. Open <code>main.py</code>.</li>
-<li>Your facilitator should have installed Pygal. If it is missing, use a terminal in this folder:</li>
+<li><a href="archives/charting-champions-starter.zip" target="_blank">Download the starter files</a>. In File Explorer, right-click the ZIP, choose <strong>Extract All</strong> and open the extracted folder. Keep <code>main.py</code> and the four CSV files together.</li>
+<li>Open <strong>Thonny</strong> from the Start menu. The interpreter shown at the bottom right should be local Python 3. If you see MicroPython, click the interpreter name and choose <strong>Local Python 3</strong> or Thonny’s bundled Python.</li>
+<li>Choose <strong>File → Open</strong> and select the extracted <code>main.py</code>. The upper editor pane is where you write your program. The <strong>Shell</strong> below shows messages when it runs. Choose <strong>View → Shell</strong> if it is hidden.</li>
+<li>Press <strong>F5</strong> (the green <strong>Run current script</strong> button). Look for <code>Welcome to Charting Champions!</code> in the Shell.</li>
 </ol>
-<pre><code class="language-text">python -m venv .venv
-</code></pre>
-<p>On Windows, install and run using:</p>
-<pre><code class="language-text">.venv\Scripts\python -m pip install pygal
-.venv\Scripts\python main.py
-</code></pre>
-<p>On macOS/Linux use <code>python3 -m venv .venv</code>, then:</p>
-<pre><code class="language-text">.venv/bin/python -m pip install pygal
-.venv/bin/python main.py
-</code></pre>
-<p>Use the same interpreter each time you run the program. Your facilitator can help if software installation is restricted.</p>
-<h2 id="alternative%3A-browser-editor" tabindex="-1"><a class="header-anchor" href="#alternative%3A-browser-editor">Alternative: browser editor</a></h2>
-<p>Open the <a href="https://projects.raspberrypi.org/en/projects/charting-champions/0" target="_blank">original project</a> and follow its current starter-project link. Its editor may display charts with <code>chart.render()</code>. The local instructions in this lab instead save a file with <code>chart.render_to_file('chart.svg')</code>. Use the output method appropriate to your editor.</p>
-<h2 id="checkpoint" tabindex="-1"><a class="header-anchor" href="#checkpoint">Checkpoint</a></h2>
-<p>You can see <code>main.py</code> and the CSV files. Run <code>main.py</code>: it should print a short welcome message without errors.</p>
+<h2 id="check-that-you-can-draw-charts" tabindex="-1"><a class="header-anchor" href="#check-that-you-can-draw-charts">Check that you can draw charts</a></h2>
+<p>At the <code>&gt;&gt;&gt;</code> prompt in the Shell, type <code>from pygal import Bar</code> and press Enter. If a fresh prompt appears, you are ready.</p>
+<p>If you see <code>ModuleNotFoundError</code>, open <strong>Tools → Manage packages</strong>, search for <strong>pygal</strong>, select the package named <strong>pygal</strong> and click <strong>Install</strong>. Close the package window and try the import again. If installation is restricted, ask your facilitator to add Pygal to the selected interpreter.</p>
+<p>For the next step, click back into the <strong>main.py editor tab</strong>. Save your changes with <strong>Ctrl+S</strong> and run them with <strong>F5</strong>.</p>
 
         </article>
       </div>
@@ -315,7 +314,7 @@
 
 
   <div class="hidden xl:block card w-80 min-w-80 max-w-80 p-4 text-center shadow-2xl rounded-box bg-[#d6e9e9] m-2 h-auto overflow-y-auto self-start sticky top-20">
-    <h3 class="font-bold mb-2"> Charting Champions</h3>
+    <h3 class="font-bold mb-2"> Charting Champions</h3>
     
       <div class="flex justify-center items-center">
         <span class="iconify" data-icon="mdi:chart-box" data-width="164" style="color:#D00034;"></span>
@@ -338,12 +337,22 @@
    <span class="mx-2 iconify" data-icon="fluent:beaker-24-filled" data-height="30" style="color:#d00034"></span>
   </div> 
 
-    <span class="mb-1 ml-2">  Charting Champions </span>
+    <span class="mb-1 ml-2">  Charting Champions </span>
   </a>
 </div>
 
           <div class="flex py-1 ml-0">
     <a href="../notebook-01-charting-champions/index.html" class="flex">
+        <div>
+   <span class="mx-2 iconify" data-icon="fluent:notebook-24-regular" data-height="30" style="color:#557927"></span>
+  </div> 
+
+    <span class="mb-1 ml-2">  Charting Champions: Jupyter Notebook </span>
+  </a>
+</div>
+
+          <div class="flex py-1 ml-0">
+    <a href="../notebook-01-charting-champions-2/index.html" class="flex">
         <div>
    <span class="mx-2 iconify" data-icon="fluent:notebook-24-regular" data-height="30" style="color:#557927"></span>
   </div> 
